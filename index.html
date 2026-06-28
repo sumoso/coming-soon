@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling and layout */
+        body {
+            font-family: 'Sora', sans-serif;
+            /* Darkened the grey starting point of the gradient to make it visible */
+            background: linear-gradient(135deg, #FAF5EA 0%, #ffffff 100%);
+            min-height: 100vh;
+            
+            /* Flexbox for perfect centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            color: #333333;
+        }
+
+        /* Container alignment and animation */
+        .container {
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Logo styling */
+        .logo {
+            max-width: 100%;
+            width: 320px; 
+            height: auto;
+            /* Increased bottom margin for more space between elements */
+            margin-bottom: 80px; 
+        }
+
+        /* Typography */
+        h1 {
+            font-weight: 600;
+            /* Decreased font size slightly as requested */
+            font-size: 1.75rem;
+            letter-spacing: -0.5px;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            .logo {
+                width: 240px;
+                /* Increased mobile bottom margin to maintain proportional spacing */
+                margin-bottom: 40px; 
+            }
+            h1 {
+                /* Decreased mobile font size slightly */
+                font-size: 1.5rem; 
+            }
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(15px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://i.ibb.co/HD50qbzv/Group-220.png" alt="Logo" class="logo">
+        <h1>Coming Soon!</h1>
+    </div>
+
+</body>
+</html>
